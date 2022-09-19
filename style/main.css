@@ -1,0 +1,701 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.screen-one {
+  position: relative;
+}
+
+.screen-one__bg {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background-image: url("../img/bg1.jpg");
+}
+
+.screen-one__outfit {
+  position: absolute;
+  top: 0;
+}
+
+.screen-one__bubble {
+  position: absolute;
+  top: 27%;
+  right: 25%;
+}
+
+.screen-one__cursor {
+  position: absolute;
+  width: 300px;
+  height: 230px;
+  top: 79%;
+  right: 0;
+  -webkit-animation-name: cursor-move;
+          animation-name: cursor-move;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes cursor-move {
+  0% {
+    top: 79%;
+    right: 0;
+  }
+  100% {
+    top: 70%;
+    right: 20%;
+  }
+}
+
+@keyframes cursor-move {
+  0% {
+    top: 79%;
+    right: 0;
+  }
+  100% {
+    top: 70%;
+    right: 20%;
+  }
+}
+
+.screen-one__button {
+  position: absolute;
+  width: 700px;
+  height: 200px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, limegreen), to(chartreuse));
+  background: linear-gradient(0deg, limegreen 50%, chartreuse 100%);
+  -webkit-box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.75);
+  bottom: 20%;
+  right: 10%;
+  display: block;
+  color: white;
+  font-size: 120px;
+  font-weight: 900;
+  background-color: inherit;
+  border-radius: 140px;
+  border: none;
+  cursor: pointer;
+  -webkit-animation-name: button-dance;
+          animation-name: button-dance;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes button-dance {
+  0% {
+    rotate: 5deg;
+    scale: 1.1;
+  }
+  100% {
+    rotate: -5deg;
+  }
+}
+
+@keyframes button-dance {
+  0% {
+    rotate: 5deg;
+    scale: 1.1;
+  }
+  100% {
+    rotate: -5deg;
+  }
+}
+
+.screen-one__button--click {
+  position: absolute;
+  width: 800px;
+  height: 300px;
+  bottom: 15%;
+  right: 6%;
+  display: block;
+  background-color: inherit;
+  border-radius: 140px;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.screen-two {
+  display: none;
+}
+
+.screen-two__shadow {
+  position: absolute;
+  top: 0;
+}
+
+.screen-two__list {
+  position: absolute;
+  top: 25px;
+  right: 740px;
+  margin: 0;
+  padding: 0;
+}
+
+.screen-two__button1 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  background-image: url("../img/button1grey.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: inherit;
+  border: 10px solid #747272;
+  border-radius: 40px;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-animation-name: button1;
+          animation-name: button1;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes button1 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes button1 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.screen-two__button1--click {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.screen-two__button2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 210px;
+  background-image: url("../img/button2grey.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: inherit;
+  border: 10px solid #747272;
+  border-radius: 40px;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-animation-name: button2;
+          animation-name: button2;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes button2 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes button2 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.screen-two__button2--click {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 210px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.screen-two__button3 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 420px;
+  background-image: url("../img/button3grey.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: inherit;
+  border: 10px solid #747272;
+  border-radius: 40px;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-animation-name: button3;
+          animation-name: button3;
+  -webkit-animation-duration: 750ms;
+          animation-duration: 750ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes button3 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes button3 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.screen-two__button3--click {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 420px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.screen-two__button4 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 630px;
+  background-image: url("../img/button4grey.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: inherit;
+  border: 10px solid #747272;
+  border-radius: 40px;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-animation-name: button4;
+          animation-name: button4;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes button4 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes button4 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.screen-two__button4--click {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 630px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.screen-two__button5 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 840px;
+  background-image: url("../img/button5grey.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: inherit;
+  border: 10px solid #747272;
+  border-radius: 40px;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-animation-name: button5;
+          animation-name: button5;
+  -webkit-animation-duration: 1250ms;
+          animation-duration: 1250ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes button5 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes button5 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.screen-two__button5--click {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 840px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.screen-two__button--active {
+  border-color: green;
+}
+
+.screen-two__cursor {
+  position: absolute;
+  width: 300px;
+  height: 230px;
+  top: 820px;
+  left: 80px;
+  z-index: 12;
+  -webkit-animation-name: cursor-in;
+          animation-name: cursor-in;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes cursor-in {
+  0% {
+    top: 820px;
+    left: 80px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes cursor-in {
+  0% {
+    top: 820px;
+    left: 80px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.screen-two__okBtn {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 0px solid;
+  border-radius: 50%;
+  background-color: grey;
+  -webkit-box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.75);
+  font-size: 90px;
+  color: white;
+  top: 50%;
+  right: 80px;
+  cursor: pointer;
+  -webkit-animation-name: button-ok;
+          animation-name: button-ok;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes button-ok {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.2;
+  }
+}
+
+@keyframes button-ok {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.2;
+  }
+}
+
+.screen-two__okBtn--active {
+  background-color: gold;
+  color: black;
+}
+
+.screen-two .emoji {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  -webkit-animation-name: emodji-on;
+          animation-name: emodji-on;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes emodji-on {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 250px;
+  }
+}
+
+@keyframes emodji-on {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 250px;
+  }
+}
+
+.screen-three {
+  display: none;
+}
+
+.screen-three__bg {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  top: 0;
+  background-image: url("../img/bg2-1.jpg");
+}
+
+.screen-three__bubble {
+  position: absolute;
+  top: 40%;
+  right: 35%;
+  -webkit-animation-name: bubble2;
+          animation-name: bubble2;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes bubble2 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes bubble2 {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.screen-three__fail {
+  display: none;
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  padding: 15px;
+  rotate: -30deg;
+  top: 18%;
+  right: 35%;
+  background-color: red;
+  border: 15px solid;
+  color: white;
+  font-size: 120px;
+  font-weight: 900;
+  -webkit-animation-name: fail;
+          animation-name: fail;
+  -webkit-animation-duration: 750ms;
+          animation-duration: 750ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes fail {
+  0% {
+    scale: 2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes fail {
+  0% {
+    scale: 2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.screen-three__tryAgain {
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  top: 0;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.screen-three__button {
+  display: none;
+  position: absolute;
+  width: 900px;
+  height: 250px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, limegreen), to(chartreuse));
+  background: linear-gradient(0deg, limegreen 50%, chartreuse 100%);
+  -webkit-box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.75);
+  top: 70%;
+  left: 27%;
+  color: white;
+  font-size: 120px;
+  font-weight: 900;
+  background-color: inherit;
+  border-radius: 140px;
+  border: none;
+  cursor: pointer;
+  -webkit-animation-name: button-tryAgain;
+          animation-name: button-tryAgain;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes button-tryAgain {
+  0% {
+    rotate: 5deg;
+  }
+  100% {
+    rotate: -5deg;
+  }
+}
+
+@keyframes button-tryAgain {
+  0% {
+    rotate: 5deg;
+  }
+  100% {
+    rotate: -5deg;
+  }
+}
+/*# sourceMappingURL=main.css.map */
